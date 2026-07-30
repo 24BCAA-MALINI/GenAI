@@ -1,72 +1,64 @@
-Overview
+# News Sentiment Analysis for Stock Price Prediction
 
-This project predicts stock prices using historical stock market data and Machine Learning techniques. By analyzing past market trends, the model forecasts future stock prices, helping users understand market behavior and make data-driven decisions.
+## Project Overview
+This project uses **Natural Language Processing (NLP)** and **Machine Learning** to analyze the sentiment of financial news articles and predict its impact on stock prices. By classifying news as positive, negative, or neutral, the model helps understand how market sentiment influences stock price movements.
 
-Features
+## Objectives
+- Collect and preprocess financial news data.
+- Perform sentiment analysis on news headlines and articles.
+- Convert text into numerical features.
+- Train a machine learning model for sentiment classification.
+- Predict stock price movement based on news sentiment.
 
-Historical stock price analysis
-Data preprocessing and cleaning
-Exploratory Data Analysis (EDA)
-Stock price prediction using Machine Learning
-Model performance evaluation
-Visualization of actual vs. predicted stock prices
+## Dataset
+The dataset includes:
+- News Headlines
+- News Articles (Optional)
+- Publication Date
+- Company/Stock Name
+- Sentiment Label (Positive, Negative, Neutral)
+- Stock Price Movement (Target Variable)
 
-Technologies Used
+## Technologies Used
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- NLTK / TextBlob / VADER
+- Scikit-learn
 
-Python
-Jupyter Notebook
-Pandas
-NumPy
-Matplotlib
-Scikit-learn
-TensorFlow/Keras (if applicable)
+## Project Workflow
+1. Import required libraries.
+2. Load the news dataset.
+3. Clean and preprocess text data.
+4. Perform sentiment analysis.
+5. Convert text into numerical features using TF-IDF or Count Vectorizer.
+6. Split the dataset into training and testing sets.
+7. Train the machine learning model.
+8. Evaluate model performance.
+9. Predict stock price movement based on news sentiment.
 
-Dataset
+## Machine Learning Models
+- Logistic Regression
+- Naive Bayes
+- Support Vector Machine (SVM)
+- Random Forest Classifier
 
-The dataset contains historical stock market information, including:
-Date
-Open Price
-High Price
-Low Price
-Close Price
-Adjusted Close Price
-Volume
+## Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+- ROC-AUC Score
 
-Project Workflow
+## Results
+The model successfully classifies news sentiment and predicts the likely impact on stock price movement, enabling better investment insights and decision-making.
 
-Load the historical stock dataset.
-Clean and preprocess the data.
-Perform Exploratory Data Analysis (EDA).
-Split the dataset into training and testing sets.
-Train the Machine Learning model.
-Evaluate model performance.
-Predict future stock prices.
-Visualize the prediction results.
-
-Machine Learning Model
-
-This project uses a Machine Learning model to learn patterns from historical stock prices and predict future values. The model is trained on historical data and evaluated using standard regression metrics.
-
-Evaluation Metrics
-
-The model performance is evaluated using:
-
-Mean Absolute Error (MAE)
-Mean Squared Error (MSE)
-Root Mean Squared Error (RMSE)
-R² Score
-
-Results
-
-The trained model successfully predicts stock prices based on historical market trends. Prediction graphs compare actual and predicted prices to evaluate the model's accuracy and performance.
-
-Future Enhancements
-
-Integrate real-time stock market data
-Improve prediction accuracy using LSTM or Transformer models
-Deploy the project as a web application
-Support prediction for multiple stocks
-
-Conclusion
-
-This project demonstrates how Machine Learning can be used to analyze historical stock market data and predict future stock prices. Although stock markets are influenced by many unpredictable factors, the model provides useful insights into market trends and serves as a foundation for further financial analysis.
+## Future Enhancements
+- Integrate real-time financial news APIs.
+- Use Transformer-based models such as BERT or FinBERT for improved sentiment analysis.
+- Combine historical stock prices with news sentiment for better prediction accuracy.
+- Deploy the model using Streamlit or Flask.
